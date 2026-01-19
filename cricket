@@ -2,10 +2,21 @@
 
 import os
 import sys
+import traceback
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from src.main import main
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except KeyboardInterrupt:
+        print("\n👋 Program interrupted by user.")
+        sys.exit(1)
+    except Exception as e:
+        print(f"❌ An unexpected error occurred: {str(e)}")
+        if '--debug' in sys.argv:
+            print("Debug info:")
+            traceback.print_exc()
+        sys.exit(1)

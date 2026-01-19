@@ -62,6 +62,15 @@ You should see:
 4️⃣ Install Dependencies
 pip install -r requirements.txt
 
+5️⃣ Make the cricket script executable
+chmod +x cricket
+
+6️⃣ Install additional packages if needed
+pip install pip-tools
+
+7️⃣ Verify installation
+python -c "import requests, bs4, lxml, rich; print('Dependencies installed successfully')"
+
 ▶️ Usage
 Show live matches
 python ./cricket live
@@ -70,6 +79,18 @@ python ./cricket live
 or
 
 ./cricket live
+
+Additional commands:
+./cricket --help          # Show help information
+./cricket -h              # Short help
+./cricket version         # Show version information
+./cricket live --refresh  # Auto-refresh live matches
+./cricket live --filter india  # Filter matches containing 'india'
+
+Examples:
+./cricket live                    # View all live matches
+./cricket live --refresh 30       # Refresh every 30 seconds
+./cricket live --filter australia # Filter for Australia matches
 
 🖥️ Sample Output
 🏏 Live Cricket Matches
@@ -98,15 +119,23 @@ rich — Terminal UI rendering
 
 Virtual Environments (venv)
 
-⚠️ Notes on Web Scraping
+⚠️ Troubleshooting & Notes
 
-Scraping is done only on public, unauthenticated pages
+Common Issues:
+• If getting HTTP errors, sites may be temporarily blocking requests
+• Try running the command again after a few minutes
+• Ensure all dependencies are installed (check with pip list)
 
-Requests are low-frequency (CLI usage)
+Notes on Web Scraping:
+• Scraping is done only on public, unauthenticated pages
+• Requests are low-frequency (CLI usage)
+• Some sites may temporarily block automated requests
+• The tool handles this safely without crashing
 
-Some sites may temporarily block automated requests
-
-The tool handles this safely without crashing
+Rate Limiting:
+• Tool makes minimal requests (only when called)
+• No persistent connections or aggressive scraping
+• Respects site robots.txt guidelines
 
 🎓 Academic / Interview Explanation (Short)
 
