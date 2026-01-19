@@ -7,6 +7,7 @@ from typing import Any, Dict, Optional
 
 CACHE_FILE_PATH = os.path.expanduser("~/.cricket_cache.json")
 CACHE_DURATION = 60 * 2  # Cache duration in seconds (2 minutes)
+CACHE_DIR = os.path.expanduser("~/.cricket")  # Directory for cache files
 
 
 def load_cache() -> Dict[str, Any]:
