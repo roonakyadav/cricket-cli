@@ -5,6 +5,7 @@ import json
 from typing import Dict, Any
 
 CONFIG_FILE_PATH = os.path.expanduser("~/.cricket_config.json")
+CONFIG_DIR = os.path.expanduser("~/.cricket")  # Directory for config files
 
 DEFAULT_CONFIG = {
     "refresh_interval": 30,
