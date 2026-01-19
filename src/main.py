@@ -8,7 +8,11 @@ VERSION = "1.1.0"
 
 
 def parse_args():
-    """Parse command line arguments and return configuration"""
+    """Parse command line arguments and return configuration
+        
+        This function parses the command line arguments provided by the user
+        and returns a dictionary with the parsed configuration options.
+        """
     # Load config to get default refresh interval
     config = load_config()
     default_refresh_interval = config.get("refresh_interval", 30)
