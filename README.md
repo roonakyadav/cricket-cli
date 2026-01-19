@@ -158,3 +158,7 @@ Packaging for PyPI
 Ronak Yadav
 Scaler School of Technology, Bangalore
 Computer Science Student
+
+LinkedIn: [ronak-yadav](https://linkedin.com/in/ronak-yadav)
+GitHub: [roonakyadav_](https://github.com/roonakyadav_)
+Email: roonakyadav@gmail.com
