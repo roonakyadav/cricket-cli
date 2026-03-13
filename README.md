@@ -7,7 +7,7 @@ The project uses real-time web scraping with multi-source fallback and a clean t
 
 📡 Fetches live cricket match data (real-time when available)
 
-🌐 Usess web scraping (no paid APIs required)
+🌐 Uses web scraping (no paid APIs required)
 
 🔁 Multi-source fallback (Cricbuzz → ESPN)
 
