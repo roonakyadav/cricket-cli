@@ -111,7 +111,7 @@ Source sites blocked or no live games
 
 Python 3
 
-requests — HTTP requests
+requests — HTTPS requests
 
 beautifulsoup4 + lxml — Web scraping
 
