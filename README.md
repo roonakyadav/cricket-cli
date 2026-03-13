@@ -3,7 +3,7 @@
 A Python-based Command Line Interface (CLI) tool that displays live cricket match information directly in the terminal.
 The project uses real-time web scraping with multi-source fallback and a clean terminal UI.
 
-🚀 Features
+🚀 Features:
 
 📡 Fetches live cricket match data (real-time when available)
 
